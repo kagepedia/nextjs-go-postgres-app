@@ -32,7 +32,6 @@
       "usernamehw.errorlens"
     ],
     "postCreateCommand": "go mod tidy",
-    "remoteUser": "vscode",
     "customizations": {
       "vscode": {
         "settings": {
