@@ -2,6 +2,9 @@
     "name": "Go + Next.js + PostgreSQL",
     "dockerComposeFile": "../docker-compose.yaml",
     "service": "db",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
     "settings": {
       "terminal.integrated.shell.linux": "/bin/bash",
       "go.toolsManagement.autoUpdate": true,
