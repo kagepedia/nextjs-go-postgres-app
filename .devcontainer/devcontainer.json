@@ -1,0 +1,58 @@
+{
+    "name": "Go + Next.js + PostgreSQL",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "db",
+    "workspaceFolder": "/workspace",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "go.toolsManagement.autoUpdate": true,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "extensions": [
+      "golang.go",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "ms-azuretools.vscode-docker",
+      "ms-vscode.vscode-typescript-next",
+      "csstools.postcss",
+      "streetsidesoftware.code-spell-checker",
+      "usernamehw.errorlens"
+    ],
+    "postCreateCommand": "go mod tidy",
+    "remoteUser": "vscode",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "go.useLanguageServer": true,
+          "go.lintTool": "golangci-lint",
+          "go.lintFlags": [
+            "--fast"
+          ],
+          "go.formatTool": "goimports",
+          "go.autocompleteUnimportedPackages": true,
+          "go.testOnSave": true,
+          "go.coverOnSave": true,
+          "go.vetOnSave": "workspace",
+          "editor.formatOnSave": true,
+          "prettier.requireConfig": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+        "extensions": [
+          "golang.go",
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "csstools.postcss",
+          "graphql.vscode-graphql",
+          "streetsidesoftware.code-spell-checker",
+          "usernamehw.errorlens",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    }
+  }
+  
