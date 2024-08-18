@@ -4,7 +4,7 @@ services:
     container_name: postgres
     init: true
     build: 
-      context: .
+      context: ..
       dockerfile: ../postgres/Dockerfile
     environment:
       POSTGRES_USER: postgres
