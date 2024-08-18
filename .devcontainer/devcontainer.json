@@ -1,5 +1,6 @@
 {
     "name": "Go + Next.js + PostgreSQL",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "dockerComposeFile": "../docker-compose.yaml",
     "service": "db",
     "features": {
